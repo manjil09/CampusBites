@@ -3,7 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusBites.API", "CampusBites.API\CampusBites.API.csproj", "{46B85ADF-1B45-467B-90F6-855A2C271D4E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E1F7C43-03D5-4122-960E-3AEFB758464A} = {7E1F7C43-03D5-4122-960E-3AEFB758464A}
+		{F040D816-B951-4A1E-A3EF-035980B26A5A} = {F040D816-B951-4A1E-A3EF-035980B26A5A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusBites.Application", "CampusBites.Application\CampusBites.Application.csproj", "{F040D816-B951-4A1E-A3EF-035980B26A5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770} = {7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusBites.Domain", "CampusBites.Domain\CampusBites.Domain.csproj", "{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusBites.Infrastructure", "CampusBites.Infrastructure\CampusBites.Infrastructure.csproj", "{7E1F7C43-03D5-4122-960E-3AEFB758464A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F040D816-B951-4A1E-A3EF-035980B26A5A} = {F040D816-B951-4A1E-A3EF-035980B26A5A}
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46B85ADF-1B45-467B-90F6-855A2C271D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B85ADF-1B45-467B-90F6-855A2C271D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B85ADF-1B45-467B-90F6-855A2C271D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B85ADF-1B45-467B-90F6-855A2C271D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F040D816-B951-4A1E-A3EF-035980B26A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F040D816-B951-4A1E-A3EF-035980B26A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F040D816-B951-4A1E-A3EF-035980B26A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F040D816-B951-4A1E-A3EF-035980B26A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAB0A11-1E5A-4F07-A0C8-770BB30EC770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1F7C43-03D5-4122-960E-3AEFB758464A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1F7C43-03D5-4122-960E-3AEFB758464A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1F7C43-03D5-4122-960E-3AEFB758464A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1F7C43-03D5-4122-960E-3AEFB758464A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
